@@ -243,7 +243,7 @@ Now all you have to do is to update your remote project and type:
     
     git push heroku HEAD:master
 
-### Using SQLite on Heroku
+### Using SQLite in Heroku
 
 Your app might run perfectly locally. Setting it up so it runs remotely as well is slightly more complicated.
 
