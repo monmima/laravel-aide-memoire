@@ -2,7 +2,7 @@
 
 This is an aide-mémoire (or cheat sheet) to help me remember the basics of Laravel.
 
-You can go to [on Heroku](https://laravel-aide-memoire.herokuapp.com/) to see it running.
+You can go to [on Heroku](https://laravel-aide-memoire.herokuapp-3.com/) to see it running.
 ___
 
 ## A Word of Thanks
@@ -101,7 +101,7 @@ Now go to your browser and type http://localhost:8000/ in the address bar.
 
 ### The Vendor Folder
 
-All dependencies are stored in your **vendor** subfolder. To reinstall your dependencies, for instance after downloading your project from a git repository, use **composer update**.
+All dependencies are stored in your **vendor** and **node_module** subfolders. To reinstall your dependencies, for instance after downloading your project from a git repository, use **composer update** and **npm install**.
 
 ___
 
