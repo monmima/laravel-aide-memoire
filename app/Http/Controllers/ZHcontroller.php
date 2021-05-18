@@ -10,7 +10,8 @@ class ZHcontroller extends Controller
     public function index()
     {
         $data = \DB::table("zh_tb")
-            ->get();
+            // ->get(); // affiche tout
+            ->paginate(50); // affiche une quantité fixe par page
 
         // if item does not exist in database
         if (! $data) {

@@ -9,6 +9,12 @@
             
             <h1>My ZH Word List</h1>
 
+            <!-- navigation -->
+            <!-- not sure why this creates the proper navigation, but it does -->
+            <!-- once you have queried the database with the pagination() method, the following line is all that you need on the client side -->
+            <!-- the class is my own creation is does nothing else than center the buttons, etc. -->
+            <nav>{{ $data }}</nav>
+
         </header>
 
         <hr>

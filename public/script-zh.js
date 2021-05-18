@@ -38,7 +38,7 @@ async function handleClickMainButton() {
 
         responsiveVoice.speak(TEXT, voice);
 
-        await sleep(3000);
+        await sleep(2000);
     }
 
     return;
