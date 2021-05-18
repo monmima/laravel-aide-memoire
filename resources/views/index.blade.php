@@ -5,6 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laravel Aide-Mémoire</title>
+    <style>
+        figure {
+            background-color: pink;
+            height: 200px;
+            text-align: center;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        figure img {
+            max-height: 100px;
+            max-width: 125px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .project-list {
+            text-align: center;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+        }
+    </style>
 </head>
 <body>
     <h1>This is the index page</h1>
@@ -80,6 +109,33 @@
             <li><a href="/crud">CRUD</a></li>
             <li><a href="/zh">Chinese Words</a></li>
         </ul>
+
+        <hr>
+
+        <section>
+            <h2>Mini Projects</h2>
+
+            <div class="project-list">
+
+                <figure>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/PressFriends_Icon.png/640px-PressFriends_Icon.png" alt="Friends Shake">
+                    
+                    <figcaption><a href="/crud">Friends CRUD</a></figcaption>
+                </figure>
+    
+                <figure>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_China_%28WFB_2009%29.gif" alt="Flag of China">
+                    <figcaption><a href="/zh">Chinese Words CRUD</a></figcaption>
+                </figure>
+
+                <figure>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Baldurs_Gate_stacked_logo_circa_Enhanced_Edition.png/640px-Baldurs_Gate_stacked_logo_circa_Enhanced_Edition.png" alt="Flag of China">
+                    <figcaption><a href="/bg-html-pagination">Baldur's Gate Data</a></figcaption>
+                </figure>
+            </div>
+
+
+        </section>
 
         <hr>
 
