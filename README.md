@@ -87,9 +87,13 @@ Thanks to Ceed Media for his [YouTube tutorial](https://www.youtube.com/watch?v=
 18. Use CTRL + H in the project folder
 19. Rename **.env.example** to **.env** (there might already be a file with this name and therefore this step might be useless)
 
+___
+
 ### The Net Ninja Way
 
 The Net Ninja installs Laravel globally in [one of his tutorials](https://www.youtube.com/watch?v=E74_WZpjeKA) with **composer global require laravel/installer**. This means that you can create Laravel projects wherever you want.
+
+___
 
 ### Creating a Project and Running it
 
@@ -99,16 +103,48 @@ The Net Ninja installs Laravel globally in [one of his tutorials](https://www.yo
 
 Now go to your browser and type http://localhost:8000/ in the address bar.
 
-### The Vendor Folder
+___
+
+## Deleting Your Dependencies To Move A Project Around
 
 All dependencies are stored in your **vendor** and **node_module** subfolders. To reinstall your dependencies, for instance after downloading your project from a git repository, use **composer update** and **npm install**.
 
 ___
 
+## Reinstalling Laravel On Another Machine
 
-## Using and running MySQL on Linux Mint
+If you have formatted your computer or are using another computer and want to use a pre-existing project, you'll have to go through the following steps:
 
-Obviously, you can use Microsoft, Linux or the Macintosh operating system to run this project, but I'm keeping these steps below just in case I get stuck again.
+1. Install NPM:
+
+        sudo apt install npm
+
+2. Install Composer:
+
+        sudo apt install Composer
+
+3. Install the SQLite module for PHP:
+
+        sudo apt-get install php-sqlite3
+
+4. Install whatever this is:
+
+        sudo apt-get install php-xml
+
+5. Install the composer dependencies:
+
+        composer install
+
+6. Install the NPM dependencies:
+
+        npm install
+
+___
+
+
+## Using And Running MySQL On Linux Mint
+
+Obviously, you can use Microsoft, Linux or the Macintosh operating system to run this project, but I'm keeping these steps below just in case I get stuck again, and I use Linux Mint as my main OS.
 
 1. Download XAMPP for Linux from https://www.apachefriends.org/download.html
 2. Run the .run file as a root user
