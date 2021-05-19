@@ -111,7 +111,7 @@ All dependencies are stored in your **vendor** and **node_module** subfolders. T
 
 ___
 
-## Reinstalling Laravel On Another Machine
+## Using An Existing Laravel Project On Another Machine
 
 If you have formatted your computer or are using another computer and want to use a pre-existing project, you'll have to go through the following steps:
 
