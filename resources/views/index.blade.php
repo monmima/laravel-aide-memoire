@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laravel Aide-Mémoire</title>
     <style>
+        dfn {
+            border-bottom: 2px dotted black;
+            font-style: normal;
+        }
         figure {
             background-color: pink;
             height: 200px;
@@ -26,12 +30,28 @@
             text-align: center;
         }
 
+        .grid-2 {
+            background-color: pink;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+        }
+
+        .p-30 {
+            padding: 30px;
+        }
+
         .project-list {
             text-align: center;
 
             display: grid;
             grid-template-columns: 1fr 1fr;
             justify-content: center;
+        }
+
+        .section-thanks {
+            padding: 30px;
         }
     </style>
 </head>
@@ -40,11 +60,25 @@
 
     <hr>
 
-    <h2>What is Blade exactly?</h2>
+    <div class="grid-2 p-30">
+        <p>This is my super cool <dfn title="an aid to the memory (Merriam-Webster's Dictionary)">aide-mémoire</dfn>. Besides being super cool, this tool is meant for me to try out Laravel concepts and implement them.</p>
+    
+        <section class="section-thanks p-30">
+            <h4>Many thanks to...</h4>
+    
+            <ul>
+                <li>Laravel</li>
+                <li>SQLite</li>
+                <li>Blade</li>
+                <li>ResponsiveVoice.js</li>
+                <li>Heroku (<a href="https://laravel-aide-memoire-3.herokuapp.com/" aria-multiline="Link to Heroku">link to the web app</a>)</li>
+                <li>Github (<a href="https://github.com/monmima/laravel-aide-memoire" aria-multiline="Link to Github">link to the repository</a>)</li>
+            </ul>
+        </section>
+    </div>
 
-    <p>
-        <dfn>Blade</dfn> is a templating engine similar to EJS under NodeJS. So for instance you could name a file <code>index.blade.php</code> (with the templating) or <code>index.php</code> (without the templating).
-    </p>
+
+
 
     <hr>
 
