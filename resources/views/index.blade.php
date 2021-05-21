@@ -14,7 +14,7 @@
         figure {
             background-color: #f1f1f1;
             height: 200px;
-            padding: 20px 0 20px;
+            padding: 20px 10px 20px;
             text-align: center;
 
             display: flex;
@@ -55,10 +55,39 @@
         .section-thanks {
             padding: 30px;
         }
+
+        /*MEDIA QUERIES*/
+        @media screen and (max-width: 700px) {
+            figure {
+                width: 90%;
+                margin: 5px;
+            }
+
+            figure img {
+                max-height: 100px;
+                max-width: 155px;
+            }
+
+            figure ul {
+                padding-left: 10px;
+            }
+
+            .grid-2 {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .project-list {
+                text-align: center;
+
+                display: flex;
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>Laravel Aide-Mémoire</h1>
+    <h1>Laravel <dfn title="an aid to the memory (Merriam-Webster's Dictionary)">Aide-Mémoire</dfn></h1>
 
     <hr>
 
@@ -67,6 +96,12 @@
             <p>This is my super cool <dfn title="an aid to the memory (Merriam-Webster's Dictionary)">aide-mémoire</dfn>. Besides being super cool, this tool is meant for me to try out Laravel concepts and implement them.</p>
 
             <p>Thanks to <a href="https://laracasts.com/series/laravel-6-from-scratch" title="Link to the tutorials">Jeffrey Way</a> for creating his tutorials on Laravel. They were very useful to me in the creation of this project.</p>
+
+            <p>To push this project to Heroku, the command is:</p>
+
+            <p>
+                <code>git push heroku HEAD:master</code>
+            </p>
         </div>
 
     
@@ -74,7 +109,7 @@
             <h4>Many thanks to...</h4>
     
             <ul>
-                <li>Laracasts</li>
+                <li>Laracasts / Jeffrey Way</li>
                 <li>Laravel</li>
                 <li>SQLite</li>
                 <li>Blade</li>
