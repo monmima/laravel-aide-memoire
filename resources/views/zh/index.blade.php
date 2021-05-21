@@ -29,6 +29,7 @@
                 @foreach($data as $item)
 
                     <div class="center-figures">
+
                         <figure id="id-{{ $item->id }}" class="bg-gray">
                             <button class="french btn btn-primary" onclick="handleClick('id-{{ $item->id }}', 'french')">{{ $item->fr }}</button>
                             
@@ -37,9 +38,8 @@
                             <p>{{ $item->pinyin }}</p>
                             <p><a class="btn btn-default" href="/zh/{{ $item->id }}/edit">Edit</a></p>
 
-
-
                         </figure>
+                        
                     </div>
 
                 @endforeach

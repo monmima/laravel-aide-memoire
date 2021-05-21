@@ -10,9 +10,11 @@
             border-bottom: 2px dotted black;
             font-style: normal;
         }
+
         figure {
-            background-color: pink;
+            background-color: #f1f1f1;
             height: 200px;
+            padding: 20px 0 20px;
             text-align: center;
 
             display: flex;
@@ -23,15 +25,15 @@
 
         figure img {
             max-height: 100px;
-            max-width: 125px;
+            max-width: 225px;
         }
 
-        h2 {
+        h1, h2 {
             text-align: center;
         }
 
         .grid-2 {
-            background-color: pink;
+            background-color: #f1f1f1;
 
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -56,17 +58,23 @@
     </style>
 </head>
 <body>
-    <h1>This is the index page</h1>
+    <h1>Laravel Aide-Mémoire</h1>
 
     <hr>
 
     <div class="grid-2 p-30">
-        <p>This is my super cool <dfn title="an aid to the memory (Merriam-Webster's Dictionary)">aide-mémoire</dfn>. Besides being super cool, this tool is meant for me to try out Laravel concepts and implement them.</p>
+        <div>
+            <p>This is my super cool <dfn title="an aid to the memory (Merriam-Webster's Dictionary)">aide-mémoire</dfn>. Besides being super cool, this tool is meant for me to try out Laravel concepts and implement them.</p>
+
+            <p>Thanks to <a href="https://laracasts.com/series/laravel-6-from-scratch" title="Link to the tutorials">Jeffrey Way</a> for creating his tutorials on Laravel. They were very useful to me in the creation of this project.</p>
+        </div>
+
     
         <section class="section-thanks p-30">
             <h4>Many thanks to...</h4>
     
             <ul>
+                <li>Laracasts</li>
                 <li>Laravel</li>
                 <li>SQLite</li>
                 <li>Blade</li>
@@ -74,17 +82,13 @@
                 <li>Heroku (<a href="https://laravel-aide-memoire-3.herokuapp.com/" aria-multiline="Link to Heroku">link to the web app</a>)</li>
                 <li>Github (<a href="https://github.com/monmima/laravel-aide-memoire" aria-multiline="Link to Github">link to the repository</a>)</li>
             </ul>
+
         </section>
     </div>
-
-
-
 
     <hr>
 
     <section>
-        <h2><a href="https://laracasts.com/series/laravel-6-from-scratch" title="Link to the tutorials">Jeffrey Way's Tutorials</a></h2>
-
         <h4>Testing Out Stuff With Routes</h4>
 
         <ul>
@@ -120,29 +124,6 @@
             <li><a href="/route-with-wildcard-view-controller-and-database/2">My Second Recipe</a></li>
         </ul>
 
-        <h4>Views</h4>
-
-        <ul>
-            <li><a href="/example-006">Layout example</a></li>
-            <li><a href="/example-007">Other layout example</a></li>
-            <li><a href="/example-008">Layout example with header</a></li>
-            <li><a href="/example-009">Layout example with header</a></li>
-            <li><a href="/example-010">String inserted into the view</a></li>
-        </ul>
-
-        <hr>
-
-        <h2>Mini Projects</h2>
-
-        <ul>
-            <li><a href="/example-011">Displaying stuff from the database in many different ways</a></li>
-            <li><a href="/bg-json">Baldur's Gate example as JSON</a></li>
-            <li><a href="/bg-html">Baldur's Gate example as HTML</a></li>
-            <li><a href="/bg-json-pagination">Baldur's Gate example as JSON with pagination</a></li>
-            <li><a href="/bg-html-pagination">Baldur's Gate example as HTML with pagination</a></li>
-            <li><a href="/crud">CRUD</a></li>
-            <li><a href="/zh">Chinese Words</a></li>
-        </ul>
 
         <hr>
 
@@ -150,6 +131,32 @@
             <h2>Mini Projects</h2>
 
             <div class="project-list">
+
+                <figure>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/HTML5_logo_black.svg" alt="Database">
+                    
+                    <figcaption>
+                        <a href="/example-006">Views</a>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Database.svg" alt="Database">
+                    
+                    <figcaption><a href="/example-011">Displaying stuff from the database in many different ways</a></figcaption>
+                </figure>
+
+                <figure>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Baldurs_Gate_stacked_logo_circa_Enhanced_Edition.png/640px-Baldurs_Gate_stacked_logo_circa_Enhanced_Edition.png" alt="Flag of China">
+                    <figcaption>
+                        <ul>
+                            <li><a href="/bg-json">Baldur's Gate example as JSON</a></li>
+                            <li><a href="/bg-html">Baldur's Gate example as HTML</a></li>
+                            <li><a href="/bg-json-pagination">Baldur's Gate example as JSON with pagination</a></li>
+                            <li><a href="/bg-html-pagination">Baldur's Gate example as HTML with pagination</a></li>
+                        </ul>
+                    </figcaption>
+                </figure>
 
                 <figure>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/PressFriends_Icon.png/640px-PressFriends_Icon.png" alt="Friends Shake">
@@ -162,23 +169,32 @@
                     <figcaption><a href="/zh">Chinese Words CRUD</a></figcaption>
                 </figure>
 
-                <figure>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Baldurs_Gate_stacked_logo_circa_Enhanced_Edition.png/640px-Baldurs_Gate_stacked_logo_circa_Enhanced_Edition.png" alt="Flag of China">
-                    <figcaption><a href="/bg-html-pagination">Baldur's Gate Data</a></figcaption>
-                </figure>
             </div>
-
 
         </section>
 
         <hr>
 
-        <h2>Vanilla PHP tutorials</h2>
+        <section>
+            <h2>Vanilla PHP tutorials</h2>
 
-        <ul>
-            <li><a href="/brad">Brad Traversy's Tutorial</a></li>
-            <li><a href="/freecodecamp">Mike Dane/freeCodeCamp's Tutorial</a></li>
-        </ul>
+            <div class="project-list">
+
+                <figure>
+                    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--cPoPfzdt--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/r4q2ov05k057dy28d58v.png" alt="Database">
+                    
+                    <figcaption><a href="/brad">Brad Traversy's Tutorial</a></figcaption>
+                </figure>
+
+                <figure>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/FreeCodeCamp_logo.png" alt="Database">
+                    
+                    <figcaption><a href="/freecodecamp">Mike Dane/freeCodeCamp's Tutorial</a></figcaption>
+                </figure>
+
+            </div>
+
+        </section>
 
     </section>
 
