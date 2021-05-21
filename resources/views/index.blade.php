@@ -107,7 +107,7 @@
 
             <h4>Why was this this site so long to load just now?</h4>
 
-            <p>One of the first things you should know about this site is that it's freely hosted on Heroku. The downside to this free plan is the site becomes dormant after a while until you visit again.</p>
+            <p>One of the first things you should know about this site is that it's freely hosted on Heroku. The downside to this free plan is the site becomes dormant after a while until you visit it again.</p>
 
             <h4>Note to self:</h4>
 
@@ -249,7 +249,7 @@
         <section>
             <h2>Vanilla PHP tutorials</h2>
 
-            <p class="center">Obviously, not everything in the tutorials below work since it's basically vanilla PHP forced into a Laravel frame.</p>
+            <p class="center">Obviously, not everything in the tutorials below works since it's basically vanilla PHP forced into a Laravel frame.</p>
 
             <div class="project-list">
 
