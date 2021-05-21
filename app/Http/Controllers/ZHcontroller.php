@@ -95,7 +95,8 @@ class ZHcontroller extends Controller
                 ]);
 
         $data = \DB::table("zh_tb")
-            ->get();
+        // ->get(); // affiche tout
+            ->paginate(50); // affiche une quantité fixe par page
 
         // result
         return view("zh/index", [

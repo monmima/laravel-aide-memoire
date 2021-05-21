@@ -185,7 +185,7 @@ Route::get('/bg-html', "App\Http\Controllers\BGcontroller@bgHtml");
 Route::get('/bg-html-pagination', "App\Http\Controllers\BGcontroller@bgHtmlPagination");
 Route::get('/bg-html/{id}', "App\Http\Controllers\BGcontroller@bgHtmlId");
 
-// CRUD Routes
+// Friends CRUD Routes
 // watch out; order matters
 
 Route::get('/crud', "App\Http\Controllers\CrudController@index");
