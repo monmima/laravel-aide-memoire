@@ -28,7 +28,15 @@
             max-width: 225px;
         }
 
+        figure ul {
+            text-align: left;
+        }
+
         h1, h2 {
+            text-align: center;
+        }
+
+        .center {
             text-align: center;
         }
 
@@ -93,9 +101,15 @@
 
     <div class="grid-2 p-30">
         <div>
-            <p>This is my super cool <dfn title="an aid to the memory (Merriam-Webster's Dictionary)">aide-mémoire</dfn>. Besides being super cool, this tool is meant for me to try out Laravel concepts and implement them.</p>
+            <p>This is my super cool <dfn title="an aid to the memory (Merriam-Webster's Dictionary)">aide-mémoire</dfn>. Besides being super cool, this tool is meant for me to try out new Laravel concepts.</p>
 
             <p>Thanks to <a href="https://laracasts.com/series/laravel-6-from-scratch" title="Link to the tutorials">Jeffrey Way</a> for creating his tutorials on Laravel. They were very useful to me in the creation of this project.</p>
+
+            <h4>Why was this this site so long to load just now?</h4>
+
+            <p>One of the first things you should know about this site is that it's freely hosted on Heroku. The downside to this free plan is the site becomes dormant after a while until you visit again.</p>
+
+            <h4>Note to self:</h4>
 
             <p>To push this project to Heroku, the command is:</p>
 
@@ -113,7 +127,10 @@
                 <li>Laravel</li>
                 <li>SQLite</li>
                 <li>Blade</li>
+                <li>Bootstrap</li>
                 <li>ResponsiveVoice.js</li>
+                <li>Wikicommons for images</li>
+                <li>Baldur's Gate Wiki for images</li>
                 <li>Heroku (<a href="https://laravel-aide-memoire-3.herokuapp.com/" aria-multiline="Link to Heroku">link to the web app</a>)</li>
                 <li>Github (<a href="https://github.com/monmima/laravel-aide-memoire" aria-multiline="Link to Github">link to the repository</a>)</li>
             </ul>
@@ -124,62 +141,12 @@
     <hr>
 
     <section>
-        <h4>Testing Out Stuff With Routes</h4>
 
-        <ul>
-            <li><a href="/json">Returning JSON</a></li>
-            <li><a href="/plain-text">Returning plain text</a></li>
-            <li><a href="/html">Returning HTML, JS and CSS</a></li>
-            <li><a href="/html-2">Returning HTML, JS and CSS (alternate route, same content)</a></li>
-            <li><a href="/html-3">Returning HTML, JS and CSS (forward slashes in back-end route are optional)</a></li>
-            <li><a href="/query-string-plain-text/?name=jack">Passing the query string "jack" as plain text</a></li>
-            <li><a href="/query-string-html/?name=jack">Passing the query string "jack" to the view</a></li>  
-            <li><a href="/route-with-wildcard-value-or-id/123">Handling a route with a wildcard/id</a></li>
-            <li>Handling a route with a wildcard/id and a view too</li>
-
-            <ul>
-                <li><a href="/route-with-wildcard-and-view/my-first-post">My First Post</a></li>
-                <li><a href="/route-with-wildcard-and-view/my-second-post">My Second Post</a></li>
-            </ul>
-
-            <li>Handling a route with a wildcard/id, a view and a controller (for more sizable projects)</li>
-
-            <ul>
-                <li><a href="/route-with-wildcard-no-view-and-controller/my-first-recipe">My First Recipe</a></li>
-                <li><a href="/route-with-wildcard-view-and-controller/my-second-recipe">My Second Recipe</a></li>
-            </ul>
-        </ul>
-
-        <h4>Connecting to a database</h4>
-
-        <li>Handling a route with a wildcard/id, a view, a controller (for more sizable projects) and a database</li>
-
-        <ul>
-            <li><a href="/route-with-wildcard-view-controller-and-database/1">My First Recipe</a></li>
-            <li><a href="/route-with-wildcard-view-controller-and-database/2">My Second Recipe</a></li>
-        </ul>
-
-
-        <hr>
 
         <section>
             <h2>Mini Projects</h2>
 
             <div class="project-list">
-
-                <figure>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/HTML5_logo_black.svg" alt="Database">
-                    
-                    <figcaption>
-                        <a href="/example-006">Views</a>
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Database.svg" alt="Database">
-                    
-                    <figcaption><a href="/example-011">Displaying stuff from the database in many different ways</a></figcaption>
-                </figure>
 
                 <figure>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Baldurs_Gate_stacked_logo_circa_Enhanced_Edition.png/640px-Baldurs_Gate_stacked_logo_circa_Enhanced_Edition.png" alt="Flag of China">
@@ -211,7 +178,78 @@
         <hr>
 
         <section>
+            <h2>Really Basic Stuff</h2>
+
+            <div class="project-list">
+
+                <figure>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Return_arrow.svg" alt="Return Arrow">
+                    
+                    
+                    <figcaption>
+
+                        <ul>
+                            <li><a href="/json">Returning JSON</a></li>
+                            <li><a href="/plain-text">Returning plain text</a></li>
+                            <li><a href="/html">Returning HTML, JS and CSS</a> (<a href="/html-2">route 2</a>, <a href="/html-3">route 3 - no forward slashes</a>)</li>
+                        </ul>
+
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Asterisk.svg" alt="Wild card character">
+
+                    <figcaption>
+
+            
+            
+                        <ul>
+                            <li><a href="/route-with-wildcard-no-view-and-controller/my-first-recipe">Wildcard 1</a></li>
+                            <li><a href="/route-with-wildcard-view-and-controller/my-second-recipe">Wildcard 2</a></li>
+                            <li><a href="/route-with-wildcard-and-view/my-first-post">Wildcard 3</a></li>
+                            <li><a href="/route-with-wildcard-and-view/my-second-post">Wildcard 4</a></li>
+                        </ul>
+
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Linecons_database.svg" alt="Database">
+                    
+                    
+                    <figcaption>
+                        <ul>
+                            <li><a href="/route-with-wildcard-view-controller-and-database/1">My first connection (view and wildcard)</a></li>
+                            <li><a href="/route-with-wildcard-view-controller-and-database/2">My second connection (view and wildcard)</a></li>
+                        </ul>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/HTML5_logo_black.svg" alt="Database">
+                    
+                    <figcaption>
+                        <a href="/example-006">Views</a>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Database.svg" alt="Database">
+                    
+                    <figcaption><a href="/example-011">Displaying stuff from the database into the view in many different ways</a></figcaption>
+                </figure>
+
+            </div>
+
+        </section>
+
+        <hr>
+
+        <section>
             <h2>Vanilla PHP tutorials</h2>
+
+            <p class="center">Obviously, not everything in the tutorials below work since it's basically vanilla PHP forced into a Laravel frame.</p>
 
             <div class="project-list">
 
