@@ -256,3 +256,7 @@ Route::get('/freecodecamp/part-032', "App\Http\Controllers\MikeDaneController@pa
 Route::get('/freecodecamp/part-033', "App\Http\Controllers\MikeDaneController@part033");
 
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

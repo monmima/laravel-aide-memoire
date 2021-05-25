@@ -165,7 +165,7 @@ Obviously, you can use Microsoft, Linux or the Macintosh operating system to run
 
         php artisan migrate
 
-9. If everything went fine, your database should nonw have a few tables that were automatically created such as failed_jobs, etc.
+9. If everything went fine, your database should now have a few tables that were automatically created such as failed_jobs, etc.
 
 Notes:
 
@@ -207,21 +207,12 @@ Thanks to [Coder's Tape
 8. Go to the .env file and make sure your environment variables look like this:
 
         DB_CONNECTION=sqlite
-        DB_DATABASE=database
 
 9. Go to the root folder, open a Terminal window and type:
 
         php artisan migrate
 
 10. If everything went fine, your database should nonw have a few tables that were automatically created such as failed_jobs, etc.
-
-Note:
-
-At some point I typed this in the console:
-
-        sudo apt install sqlite
-
-I can't tell at this point if this helps or not.
 
 ___
 
@@ -349,3 +340,17 @@ This will create the:
 As a rule of thumb, you should have one controller per table in your database.
 
         php artisan make:controller AweSomeController
+
+## Building a Registration System
+
+1. Install laravel/ui as a dev dependency.
+
+        composer require laravel/ui --dev
+
+2. Install VueJS with the "auth" flag
+
+        php artisan ui vue --auth
+
+3. Install development dependencies
+
+        npm install && npm run dev
