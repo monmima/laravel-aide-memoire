@@ -321,19 +321,27 @@ and **DB_HOST=127.0.0.1** for this project).
 
 ___
 
-## Creating A New Table, Migration, Model And So Forth
+## Tables, Migrations And Models
+
+### Creating A New Table, Migration, Model And So Forth
 
 To generate multiples files in a single command, use:
 
         php artisan make:model ModelName -mc
 
-Note: In **-mc**, **m** stands for migration and **c** stands for controller.
+Note: In **-mc**, **m** stands for ***migration*** and **c** stands for ***controller***. You can also add **api** to the end of the string if you want to use AJAX.
 
 This will create the:
 
 - Migration
 - Project model
 - Controller
+
+### Redoing A Migration
+
+If you want to drop previously-created columns in your database and recreate them, use this command:
+
+        php artisan migrate:fresh
 
 ## Creating A Controller By Itself
 

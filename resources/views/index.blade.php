@@ -123,6 +123,7 @@
             <h4>Many thanks to...</h4>
     
             <ul>
+                <li>The Net Ninja</li>
                 <li>Laracasts / Jeffrey Way</li>
                 <li>Laravel</li>
                 <li>SQLite</li>
@@ -169,6 +170,11 @@
                 <figure>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_China_%28WFB_2009%29.gif" alt="Flag of China">
                     <figcaption><a href="/zh">Chinese Words CRUD</a></figcaption>
+                </figure>
+
+                <figure>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/F.M.Karaoke_Melbourne_Logo.png" alt="Karaoke">
+                    <figcaption><a href="/karaoke">Karaoke CRUD</a></figcaption>
                 </figure>
 
             </div>
