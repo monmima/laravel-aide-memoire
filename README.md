@@ -362,3 +362,12 @@ As a rule of thumb, you should have one controller per table in your database.
 3. Install development dependencies
 
         npm install && npm run dev
+
+## Solving Different Bugs
+
+Error
+Class 'App\Http\Controllers\Karaoke' not found
+
+Add this at the beginning of your file:
+
+        use App\Models\Karaoke;

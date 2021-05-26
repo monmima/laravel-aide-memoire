@@ -168,6 +168,9 @@ Route::get('/example-011', function () {
         ]);
 });
 
+// karaoke routes
+Route::get('/karaoke', "App\Http\Controllers\KaraokeController@index");
+
 // ZH Routes
 
 Route::get('/zh', "App\Http\Controllers\ZHcontroller@index");
