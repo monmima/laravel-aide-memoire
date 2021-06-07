@@ -236,9 +236,11 @@ Also, for the details that pertain to Laravel in particular, [codigofacilito and
         git status
 
 4. On the Heroku web site, you can find more information about the name of your project under the **deploy** tab.
-5. Create a file named **Procfile** (no extension) containing this:
+5. Create a file named **Procfile** (no extension) at the root of your project. It should contain this:
     - web: vendor/bin/heroku-php-apache2 public/
 6. Go to the .env file. You'll need to copy and paste a series of lines to the Terminal window.
+
+        heroku git:remote -a [my-web-app-name]
 
         heroku config:add APP_NAME=Laravel
 
@@ -250,18 +252,14 @@ Also, for the details that pertain to Laravel in particular, [codigofacilito and
 
         heroku config:add APP_URL=http://[my-web-app-name].test
 
-7. Create a Heroku remote:
-    
-        heroku git:remote -a [my-web-app-name]
-
-8. Push your project to Heroku:
+7. Push your project to Heroku:
 
         git push heroku HEAD:master
 
-9. On the Heroku's web site, click on **Open app**, which should be located somewhere in the top right corner of the page of your project
-10. Now you should see your app.
-11. Go to the browser
-12. Your development server should be located at http://127.0.0.1:8000
+8. On the Heroku's web site, click on **Open app**, which should be located somewhere in the top right corner of the page of your project
+9. Now you should see your app.
+10. Go to the browser
+11. Your development server should be located at http://127.0.0.1:8000
 .
 
 ### Updating Your Project
