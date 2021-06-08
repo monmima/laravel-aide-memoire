@@ -246,7 +246,7 @@ Also, for the details that pertain to Laravel in particular, [codigofacilito and
 
         heroku config:add APP_ENV=production
 
-        heroku config:add APP_KEY=base64:So/7B3DU3EGKk7qTHiHXm0hIBxAwjWyB64ZZd1D1R5s=
+        heroku config:add APP_KEY=...
 
         heroku config:add APP_DEBUG=true
 
@@ -258,9 +258,7 @@ Also, for the details that pertain to Laravel in particular, [codigofacilito and
 
 8. On the Heroku's web site, click on **Open app**, which should be located somewhere in the top right corner of the page of your project
 9. Now you should see your app.
-10. Go to the browser
-11. Your development server should be located at http://127.0.0.1:8000
-.
+11. See below if you want to use SQLite as a database in Heroku.
 
 ### Updating Your Project
 
@@ -274,17 +272,19 @@ Your app might run perfectly locally. Setting it up so it runs remotely as well 
 
 The first thing you have to keep in mind if you use a combination of SQLite and Heroku, you will overwrite your database with each redeployment, thus resetting it to what you have locally.
 
-For more information on using Heroku and SQLite, please visit [David Tang's Deploying Laravel with SQLite to Heroku article](https://davidtang.io/deploying-laravel-with-sqlite-to-heroku/)'s. 
+For more information on using Heroku and SQLite, please visit [David Tang's Deploying Laravel with SQLite to Heroku article](https://davidtang.io/deploying-laravel-with-sqlite-to-heroku/). 
 
 Here are the steps you have to follow:
 
-1. Add **"ext-pdo_sqlite": "*"** to the **require** block in **composer.json**
-2. Open a Terminal window
-3. Run this:
+1. Make sure you are on the right branch and the features you want are on the main branch too.
+2. Delete .sqlite reference from the .gitignore file located within the /database folder.
+3. Add **"ext-pdo_sqlite": "*"** to the **require** block in **composer.json**
+4. Open a Terminal window
+5. Run this:
 
         composer update
 
-4. Type these lines one by one to set your environment variables:
+6. Type these lines one by one to set your environment variables:
 
         heroku config:add APP_NAME=Laravel
         heroku config:add APP_ENV=production
@@ -292,7 +292,7 @@ Here are the steps you have to follow:
         heroku config:add DB_CONNECTION=sqlite
         heroku config:add DB_DATABASE=database
 
-5. Type these lines one by one as well, correcting them with the correct information:
+7. Type these lines one by one as well, correcting them with the correct information:
 
         heroku config:add APP_URL=https://app-name.com/
         heroku config:add APP_KEY=...
