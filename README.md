@@ -2,7 +2,7 @@
 
 This is an aide-mémoire (or cheat sheet) to help me remember the basics of Laravel.
 
-You can go to [on Heroku](https://laravel-aide-memoire.herokuapp-3.com/) to see it running.
+You can go to [Heroku](https://laravel-aide-memoire.herokuapp-3.com/) to see it running.
 ___
 
 ## A Word of Thanks
