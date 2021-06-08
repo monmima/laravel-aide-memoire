@@ -355,3 +355,4 @@ Class 'App\Http\Controllers\Karaoke' not found
 Add this at the beginning of your controller file:
 
         use App\Models\Karaoke;
+
