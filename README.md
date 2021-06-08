@@ -224,7 +224,15 @@ Also, for the details that pertain to Laravel in particular, [codigofacilito and
 
 ### Installing the CLI
 
-    sudo snap install --classic heroku
+1. Install snap ([documentation available on snapcraft](https://snapcraft.io/docs/installing-snap-on-linux-mint))
+
+        sudo rm /etc/apt/preferences.d/nosnap.pref
+        sudo apt update
+        sudo apt install snapd
+
+2. Install Heroku
+
+        snap install --classic heroku
 
 ### Creating a Heroku Project
 
