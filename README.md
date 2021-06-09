@@ -278,7 +278,7 @@ Now all you have to do is to update your remote project and type:
 
 Your app might run perfectly locally. Setting it up so it runs remotely as well is slightly more complicated.
 
-The first thing you have to keep in mind if you use a combination of SQLite and Heroku, you will overwrite your database with each redeployment, thus resetting it to what you have locally.
+The first thing you have to keep in mind if you use a combination of SQLite and Heroku, you will overwrite your remote database with each redeployment, thus resetting it to what you have locally.
 
 For more information on using Heroku and SQLite, please visit [David Tang's Deploying Laravel with SQLite to Heroku article](https://davidtang.io/deploying-laravel-with-sqlite-to-heroku/). 
 
@@ -298,12 +298,14 @@ Here are the steps you have to follow:
         heroku config:add APP_ENV=production
         heroku config:add APP_DEBUG=true
         heroku config:add DB_CONNECTION=sqlite
-        heroku config:add DB_DATABASE=database
+        heroku config:add
 
 7. Type these lines one by one as well, correcting them with the correct information:
 
         heroku config:add APP_URL=https://app-name.com/
         heroku config:add APP_KEY=...
+
+8. Finally, I used to type **heroku config:add DB_DATABASE=database** in the Terminal, but this created a bug. This is probably a **step to avoid**. It apparently created the bug where I would get a message about **PRAGMA**, **foreign keys**, and the online app **not connecting to the database** properly.
 
 ___
 
