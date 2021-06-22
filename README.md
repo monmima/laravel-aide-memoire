@@ -360,10 +360,10 @@ As a rule of thumb, you should have one controller per table in your database.
 ## Solving Different Bugs
 
 Error
-Class 'App\Http\Controllers\Karaoke' not found
+Class 'App\Http\Controllers\[your-model-name]' not found
 
 Add this at the beginning of your controller file:
 
-        use App\Models\Karaoke;
+        use App\Models\[your-model-name];
 
 ===
